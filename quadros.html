@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quadrosaba.css">
+    <link rel="icon" type="image/x-icon" href="imgs/download-removebg-preview.png ">
+    <script src="quadro.js"></script>
+    <script src="DRAG.js" defer></script>
+    <script src="drop.js" defer></script>
+    <script src="drop2.js" defer></script>
+    <script src="drag2.js" defer></script>
+    <title>Maria Clara</title>
+</head>
+<body>
+    <div class="bg">
+        <header>
+            <a href="trello.html"><h1>Trello</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="trello.html">Áreas de trabalho</a></li>
+                    <li><a href="#">Recente</a></li>
+                    <li><a href="#">Marcado com estrela</a></li>
+                    <li><a href="#">Modelos</a></li>
+                         
+                        <li><a href="#" id="box">Criar</a></li>
+                        <form class="navbar_pesquisar" action="action_page.php">
+                            <input style="color:white;" type="text" placeholder="pesquisar" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+
+    <div class="board">
+        
+        <form id="card-form">
+            <input type="text" placeholder="new card +" id="card-input">
+            <button type="submit">add +</button>
+
+        </form>
+
+        <div class="lanes">
+
+        <div class="swim-lane" id="card-lane" draggable="true">
+                
+            <h3 class="heading">Programação</h3>
+
+            <form id="todo-form">
+                <input type="text" placeholder="new todo +" id="todo-input">
+            </form>
+
+            <p class="task" draggable="true">trello</p>
+        </div>
+
+
+                <div class="swim-lane" id="card-lane" draggable="true">
+                
+                    <h3 class="heading">Eletrônica</h3>
+
+                    <form id="todo-form">
+                        <input type="text" placeholder="new todo +" id="todo-input">
+                    </form>
+
+                    <p class="task" draggable="true">modulo 1</p>
+                </div>
+
+                <div class="swim-lane" id="card-lane" draggable="true">
+                    <h3 class="heading">Mecânica</h3>
+
+                    <form id="todo-form">
+                        <input type="text" placeholder="new todo +" id="todo-input">
+                    </form>
+
+                    <p class="task" draggable="true">modulo 2</p>
+                    <p class="task" draggable="true">modulo 4 </p>
+
+                    
+                </div>
+                
+                
+
+            </div>
+    </div>
+</div>
+    
+</body>
+</html>

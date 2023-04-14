@@ -1,0 +1,403 @@
+*{
+    /*background-color: rgb(109, 109, 207);*/
+    color: white;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+   background-color: rgb(109, 109, 207);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+.bg{
+    background-color: #37227d;
+}
+
+.bg header{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bg header img{
+    width: 150px;
+    transition: 0.3s all;
+    
+} 
+.bg header img:hover{
+    border: 0px solid #2a1b73ce;
+    background-color: #929df0ce;
+    border-radius: 8px;  
+    padding: -10px;
+}
+
+.bg header h1{
+    color: white;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s all;
+}
+
+.bg header h1:hover{
+    border: 1px solid #929df0ce;
+    background-color: #929df0ce;
+    border-radius: 8px;  
+    padding: 3px;
+}
+
+.bg header nav ul{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.bg header nav ul li a{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 20px;
+    transition: 0.3s all;
+}
+
+.bg header nav ul li a:hover{
+    border: 1px solid #929df0ce;
+    background-color: #929df0ce;
+    border-radius: 8px;  
+    padding: 5px;
+}
+
+.navbar_pesquisar{
+    color: white;
+ }
+ .navbar_pesquisar input[type=text]{
+    padding: 8px;
+    font-size: 15px;
+    display: inline-flex;
+    border: 1px solid #9c8af777;
+    border-radius: 8px;
+    float: left;
+    color: white;
+    width: 80%;
+    background: #9c8af777;
+    transition: 0.3s all;
+}
+
+.navbar_pesquisar input:hover{
+border: 1px solid #abbaff94;
+background-color: #abbaff94;
+}
+
+ .navbar_pesquisar button{
+    float: left;
+    width: 80%;
+    padding: 1px;
+    background: #9c8af777;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #9c8af777;
+    border-left: none; 
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s all;
+ }
+
+.navbar_pesquisar button:hover {
+    background: #abbaff94;
+    border: 1px solid #abbaff94;
+  }
+
+  .navbar_pesquisar::after {
+    content: "";
+    clear: both;
+    display: flex;
+  }
+
+
+  .board{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    width: 100%;
+
+    height: 100vh;
+    overflow: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .board::-webkit-scrollbar{
+    display: none;
+  }
+
+  .board #card-form{
+    padding: 32px 32px 0;
+    color: black;
+
+  }
+
+  .board #card-form input {
+    padding: 12px;
+    margin-right: 12px;
+    width: 225px;
+    color: #000;
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.25);
+    background: white;
+
+    font-size: 14px;
+    outline: none;
+  }
+
+  
+  #card-form button {
+    padding: 12px 32px;
+
+    border-radius: 4px;
+    color: black;
+
+    border: none;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.25);
+    background: white;
+    
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .lanes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 16px;
+    padding: 24px 32px;
+
+    overflow: scroll;
+    height: 100%;
+  }
+
+  .heading{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: black;
+  }
+
+  .swim-lane{
+    display: flex;
+    flex-direction: column;
+
+    background: #f4f4f4;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.25);
+    gap: 12px;
+
+    padding: 12px;
+    border-radius: 4px;
+    width: 225px;
+    min-height: 120px;
+
+    flex-shrink: 0;
+  }
+
+  .task{
+    background: white;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.15);
+
+    padding: 12px;
+    border-radius: 4px;
+
+    font-size: 16px;
+    cursor: move;
+  }
+
+  .is-dragging{
+    scale: 1.05;
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.25);
+    background: rgb(50,50,50);
+    color: white;
+  }      
+
+  #form-input{
+    padding: 12px;
+
+
+    border-radius: 4px;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.15);
+    background: white;
+
+    font-size: 14px;
+    outline: none;
+    cursor: move;
+  }
+
+  .swim-lane  #todo-form{
+
+    color: black;
+
+  }
+
+  .swim-lane #todo-form input {
+    padding: 12px;
+
+    color: #000;
+    border-radius: 4px;
+    border: none;
+
+    box-shadow: 0px 5px 15px rgba(0,0,0, 0.25);
+    background: white;
+
+    font-size: 14px;
+    outline: none;
+  }
+
+
+  
+.qua main ul li a {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  text-align: right;
+  font-weight: bold;
+  color: white;
+}
+
+.qua main ul img{
+  width: 20px;
+}
+
+
+.areas main h5 h4{
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  
+  justify-content: flex-start;
+  color: rgba(8, 5, 5, 0.116);
+}
+.areas main ul li a {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  color: white;
+  transition: 0.3s all;
+}
+
+.areas main ul li a:hover{
+  color: white;
+}
+
+.areas main ul img{
+  width: 15px;
+  height: 15px;
+}
+
+  .side {
+    padding-left: 50px;
+    display: grid;
+}
+
+.side .areas .sideside{
+    font-size: 12px; 
+    align-items: center;
+    padding-left: 25px;
+}
+
+.side .qua .quadros .quaqua{
+    display: inline-flex;
+    align-items: center;
+}
+
+.side .quaqua li:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    width: 100px;
+    border-radius: 3px; 
+    }
+
+.side .qua .quadros .molmol{
+    display: flex;
+    align-items: center;
+}
+
+.side .molmol li a:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    width: 100px;
+    }
+
+.side .qua .quadros .iniini{
+    display: flex;
+    align-items: center;
+}
+
+.side .iniini li a:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    width: 100px;
+    }
+
+.areas .ar h4:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    width: 85px;
+}
+.areas .ar h5:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    width: 100px;
+}
+.areas .sideside li a:hover{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+    width: 100px;
+}
+
+.main .principal .titulo .visu{
+    border: 1px solid #35008bce;
+    border-radius: 3px; 
+    background-color: #35008bce;
+    width: 210px;
+  height: 130px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.main .principal .titulo .visu p{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main #conteudo-geral{
+    display: flex;
+    padding-bottom: 1500px;
+    padding-left: 500px;
+}

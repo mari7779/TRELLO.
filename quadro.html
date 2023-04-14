@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="quatro.css">
+    <title>Quadro do Trello</title>
+  </head>
+  <body>
+    <div id="quadro">
+      <div class="lista">
+        <h2>Lista 1</h2>
+        <ul class="cards">
+          <li class="card">Cartão 1</li>
+          <li class="card">Cartão 2</li>
+        </ul>
+        <form>
+          <input type="text" placeholder="Adicionar cartão" id="cartao">
+          <button type="button" onclick="adicionarCartao(this)">Adicionar</button>
+        </form>
+      </div>
+      <button type="button" onclick="criarLista()">Adicionar lista</button>
+    </div>
+    <script src="quadro.js"></script>
+  </body>
+</html>
