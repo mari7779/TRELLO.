@@ -11,6 +11,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    background-color: #c9cfffce;
     list-style: none;
 }
 
@@ -18,7 +19,7 @@ body{
     background-color: #4a2bad;
 }
 
-.bg header{
+.bg header {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -221,6 +222,7 @@ background-color: #abbaff94;
 .side .qua .quadros .quaqua .molmol .iniini .areas .ar .sideside ul li a{
     text-decoration: none;
     display: flex;
+    font-weight: bold;
     list-style: none;
 }
 
@@ -238,6 +240,7 @@ background-color: #abbaff94;
     display: flex;
     list-style: none;
     justify-content: flex-start;
+    font-weight: bold;
     color: rgba(8, 5, 5, 0.795);
     transition: 0.3s all;
 }
@@ -246,6 +249,7 @@ background-color: #abbaff94;
     display: flex;
     list-style: none;
     justify-content: flex-start;
+    font-weight: bold;
     color: rgba(8, 5, 5, 0.795);
     transition: 0.3s all;
 }
@@ -255,7 +259,7 @@ background-color: #abbaff94;
 }
 
 .areas ul li a:hover{
-    color: rgba(8, 5, 5, 0.932);
+    color: white;
 }
 
 .areas ul .sideside img{
@@ -300,7 +304,7 @@ background-color: #abbaff94;
   width: 210px;
   height: 130px;
   border-radius: 4px;
-  background-color: #ccc;
+  color: white;
   position: relative;
   overflow: hidden;
 }
@@ -384,9 +388,10 @@ background-color: #abbaff94;
     align-items: center;
 }
 
-.side .quaqua li:hover{
-    background-color: #ccc;
+.side .quaqua li a:hover{
+    background-color: #7d4bda;
     border: 1px solid #ccc;
+    color: white;
     width: 100px;
     border-radius: 3px; 
     }
@@ -397,8 +402,9 @@ background-color: #abbaff94;
 }
 
 .side .molmol li a:hover{
-    background-color: #ccc;
+    background-color: #7d4bda;
     border: 1px solid #ccc;
+    color: white;
     border-radius: 3px; 
     width: 100px;
     }
@@ -409,26 +415,30 @@ background-color: #abbaff94;
 }
 
 .side .iniini li a:hover{
-    background-color: #ccc;
+    background-color: #7d4bda;
     border: 1px solid #ccc;
     border-radius: 3px; 
+    color: white;
     width: 100px;
     }
 
 .areas .ar h4:hover{
-    background-color: #ccc;
+    background-color: #7d4bda;
+    color: white;
     border: 1px solid #ccc;
     border-radius: 3px; 
     width: 85px;
 }
 .areas .ar h5:hover{
-    background-color: #ccc;
+    background-color: #7d4bda;
     border: 1px solid #ccc;
     border-radius: 3px; 
+    color: white;
     width: 100px;
 }
 .areas .sideside li a:hover{
-    background-color: #ccc;
+    background-color: #7d4bda;
+    color: white;
     border: 1px solid #ccc;
     border-radius: 3px; 
     width: 100px;

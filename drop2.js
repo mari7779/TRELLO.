@@ -1,32 +1,25 @@
-//quadros
+const todoForm = document.querySelector('#todo-form')
+const cardForm = document.querySelector('#card-form');
 
-const cardLane = document.getElementsByClassName("lanes");
-const card = document.getElementById("card-form");
-const input = document.getElementById("card-input");
+cardForm.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
+    const newLaneTitle = document.querySelector('#card-input').value;
 
-card.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const value = input.value;
+    const newLane = document.createElement('div');
+    newLane.classList.add('swim-lane');
+    newLane.innerHTML = `<h3 class="heading">${newLaneTitle}</h3>
+    
+    <form id="todo-form">
+    <input type="text" placeholder="new todo +" id="todo-input">
+    </form>
 
-    if (!value) return;
+`;
 
-    const newCard = document.createElement("div");
-    newCard.classList.add("swim-lane");
-    newCard.setAttribute("draggable", "true");
-    newCard.innerText = value;
+    const lanes = document.querySelector('.lanes');
+    lanes.appendChild(newLane);
 
-    newCard.addEventListener("dragstart", () => {
-        newCard.classList.add("is-dragging");
-    });
-
-
-    newCard.addEventListener("dragend", () => {
-        newCard.classList.remove("is-dragging");
-    });
-
-    cardLane.appendChild(newCard);
-
-   input.value = "";
+    document.querySelector('#card-input').value = '';
 });
+
 
