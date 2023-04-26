@@ -17,6 +17,7 @@ todo.addEventListener("submit", (e) => {
 
     newTask.addEventListener("dragstart", () => {
         newTask.classList.add("is-dragging");
+
     });
 
 
@@ -28,3 +29,5 @@ todo.addEventListener("submit", (e) => {
 
     input.value = "";
 });
+
+
